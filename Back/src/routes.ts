@@ -1,9 +1,9 @@
-// Aplicação para gerenciar as rotas da aplicação
-import express from "express";
-import AnnotationController from './Controllers/AnnotationController';
+const express = require('express');
+const AnnotationController = require('./Controllers/AnnotationController');
 
 const routes = express.Router();
 
-routes.get('/annotations', AnnotationController.index); // Rota para listar todas as anotações
+routes.post('/annotations', AnnotationController.create); // Rota para criação de anotações
+routes.get('/annotations', AnnotationController.read); // Rota para listagem de anotações  
 
-export default routes;
+module.exports = routes;
