@@ -23,5 +23,17 @@ module.exports = {
         }); // Nessa linha estou criando um novo registro no banco de dados
       
         return res.json(annotationCreated); // Nessa linha estou retornando a anotação criada 
-    }  
+    } , 
+
+    async delete(resq, res) {
+        const{id} = resq.params; // aqui estou pegando o id da anotação para pode deletar na rota 
+        
+        const annotationsDelete = await Annotations.findByIdAndDelete({_id : id});
+
+
+        if(Annotations){
+            return res.json(annotationsDelete); 
+    }
+    return res.status(400).json({error: "Anotação não encontrada!"});    
+  }
 }
