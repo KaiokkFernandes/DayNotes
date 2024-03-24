@@ -1,3 +1,4 @@
+import ContentController from "./Controllers/ContentController";
 import PriorityController from "./Controllers/PriorityController";
 
 const express = require('express');
@@ -13,6 +14,10 @@ routes.delete('/annotations/:id', AnnotationController.delete); // Rota para del
 //Rota de prioriadade   
 routes.get('/priorities', PriorityController.read)  // Rota para listagem de prioridades 
 routes.post('/priorities', PriorityController.update) // Rota para atualizar prioridades    
+
+//rota Content 
+routes.post('/contents/:id', ContentController.update) // Rota para atualizar prioridades   
+
 
 
 module.exports = routes;

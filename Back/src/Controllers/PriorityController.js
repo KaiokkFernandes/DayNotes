@@ -25,6 +25,8 @@ module.exports = {
 
         await annotations.save(); // salva a anotação atualizada
 
+        return res.json(annotations); 
+
     }
 
 }
