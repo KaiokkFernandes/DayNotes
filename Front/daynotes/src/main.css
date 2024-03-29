@@ -1,0 +1,30 @@
+main{
+    flex: 1;
+}
+
+main ul{
+    display: flex;  
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    list-style: none;
+}
+
+li.notepad-infos div{
+    display: flex;  
+    justify-content: space-between;
+
+}
+
+li.notepad-infos{
+     background: #fff;
+     box-shadow: 0 0 14px 0 rgba(0,0,0,0.2);   
+     border-radius: 10px;
+     padding: 20px 20px 10px 2px;
+
+}   
+
+li.notepad-infos strong{ 
+    display: block;
+    font-size: 16px;
+    
+}

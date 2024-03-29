@@ -1,5 +1,8 @@
 import React from 'react';  
 import './globalcss.css';
+import './sidebar.css';
+import './App.css';
+import './main.css'; 
 
 function App() {
   return (
@@ -18,6 +21,21 @@ function App() {
           <button type='submit'>Salvar</button> 
         </form>
       </aside>
+      <main>
+        <ul>
+          <li className='notepads-infos'>
+            <div>
+              <strong>Fazer Compras</strong>
+              <div>
+                x
+              </div>
+              <div>
+                <textarea></textarea>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </main>
     </div>
   );
 }
