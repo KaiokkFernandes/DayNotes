@@ -4,6 +4,8 @@ import './sidebar.css';
 import './App.css';
 import './main.css'; 
 
+import Notes from './components/Notes/index.js ';
+
 function App() {
   return (
     <div>
@@ -23,17 +25,7 @@ function App() {
       </aside>
       <main>
         <ul>
-          <li className='notepads-infos'>
-            <div>
-              <strong>Fazer Compras</strong>
-              <div>
-                x
-              </div>
-              <div>
-                <textarea></textarea>
-              </div>
-            </div>
-          </li>
+         
         </ul>
       </main>
     </div>

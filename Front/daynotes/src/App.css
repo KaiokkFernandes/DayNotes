@@ -1,9 +1,10 @@
-#app{
-    max-width: 1200px;
-    margin: 0 auto; 
-    padding: 60px 30px;
+#app {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap; /* Permite que os itens se alinhem conforme a largura da página */
     align-items: flex-start;
-    
+    justify-content: space-between; /* Espaçamento entre o caderno de notas e a lista de compras */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 30px;
 }
