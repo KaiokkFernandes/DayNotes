@@ -1,3 +1,5 @@
+import React, { useState } from 'react';  
+
 import React from 'react';  
 import './globalcss.css';
 import './sidebar.css';
@@ -7,6 +9,8 @@ import './main.css';
 import Notes from './components/Notes/index.js ';
 
 function App() {
+  const  [title, setTitles] = useState('');
+  const  [notas, setNatas] = useState('');  
   return (
     <div>
       <aside>
@@ -14,11 +18,19 @@ function App() {
         <form>
           <div className='int-block'>
             <label htmlFor='title'>Título de Anotação</label>
-            <input type='text' id='title' name='title' />
+            <input 
+              required 
+              value={title}
+          
+             />
           </div>
           <div className='input-block'>
             <label htmlFor='note'>Anotação</label>
-            <textarea id='note' name='note'></textarea>             
+            <textarea 
+              required 
+              value={notas}
+              onChange={e => setNatas(e.target.value)}  
+            ></textarea>             
           </div>
           <button type='submit'>Salvar</button> 
         </form>
@@ -27,7 +39,7 @@ function App() {
         <ul>
            <Notes></Notes>
            <Notes></Notes>
-           
+
         </ul>
       </main>
     </div>
