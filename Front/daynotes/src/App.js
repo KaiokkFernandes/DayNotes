@@ -25,7 +25,9 @@ function App() {
       </aside>
       <main>
         <ul>
-         
+           <Notes></Notes>
+           <Notes></Notes>
+           
         </ul>
       </main>
     </div>

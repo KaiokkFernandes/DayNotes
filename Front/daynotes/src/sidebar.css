@@ -9,6 +9,14 @@ aside {
     max-width: 48%;
 }
 
+
+@media (max-width: 1000px) {
+    aside {
+        width: 100%;
+        max-width: 100%;
+    }
+}   
+
 aside strong {
     font-size: 20px;
     text-align: center;
