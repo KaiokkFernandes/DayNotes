@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
+import api from './services/api.js';
 
 import './globalcss.css';
 import './sidebar.css';
 import './App.css';
 import './main.css'; 
 
-import Notes from './components/Notes/index.js ';
+import Notes from './componentes/Notes/index.js';
 
 function App() {
   const  [title, setTitles] = useState('');
